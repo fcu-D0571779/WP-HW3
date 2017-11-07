@@ -4,15 +4,16 @@
         <meta charset="utf-8">
         <title>Javascript Programming</title>
         <script type="text/javascript">
+            var tempreture, Fahrenheit; //string entered by the user
 
-            var tempreture; //string entered by the user
+            function trans(tempreture) {
+                Fahrenheit = 1.8 * tempreture + 32
+                document.writeln("<h1>The Fahrenheit is "+ Fahrenheit + "</h1>")
+            }
 
             tempreture = window.prompt("Please enter tempreture")
+            trans(tempreture)
 
-            var Fahrenheit = 1.8 * tempreture + 32
-
-            document.writeln("<h1>The Fahrenheit is "+ Fahrenheit + "</h1>")
-            
         </script>
     </head>
     <body>
