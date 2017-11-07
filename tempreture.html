@@ -7,13 +7,11 @@
             var tempreture, Fahrenheit; //string entered by the user
 
             function trans(tempreture) {
-                Fahrenheit = 1.8 * tempreture + 32
-                document.writeln("<h1>The Fahrenheit is "+ Fahrenheit + "</h1>")
+                return 1.8 * tempreture + 32
             }
-
             tempreture = window.prompt("Please enter tempreture")
-            trans(tempreture)
-
+            Fahrenheit = trans(tempreture)
+            document.writeln("<h1>The Fahrenheit is "+ Fahrenheit + "</h1>")
         </script>
     </head>
     <body>
